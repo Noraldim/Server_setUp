@@ -7,7 +7,7 @@ sudo apt install htop rsync ufw
 read -p "Enter yor PGP to enter fast and securly  (copy and past it ) :" PGP
 
 sudo echo "$PGP" >> ~/.ssh/authorized_keys
-#some if statment ;
+#some if statment ;.
 securty(){
         if grep '^#PermitRootLogin ' /etc/ssh/sshd_config ; then
         echo "PermitRootLogin yes " >> /etc/ssh/sshd_config
